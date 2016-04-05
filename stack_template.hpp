@@ -23,7 +23,7 @@ public:
   ~Stack();   
 
   void push(T e);
-  T pop() ;      
+  T pop();      
   T empty() const;  
 
   void size_i();
@@ -36,10 +36,8 @@ public:
 };
 
 template <class T>
-Stack<T>::Stack()
-{ 
-  top = NULL;
-}
+Stack<T>::Stack(): top(NULL) {}
+
 
 template <class T>
 Stack<T>::~Stack() 
